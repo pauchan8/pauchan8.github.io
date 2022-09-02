@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,7 +15,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Restaurant Website</title>
+    <title>ZEBRADRIVINGSCHOOL</title>
   </head>
   <body>
     
@@ -20,27 +26,21 @@
         <a href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a href="#reservation">Reservation</a>
-      </li>
-      <li class="nav-item">
-        <a href="#menu">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a href="#shop">Shop</a>
+        <a href="#exampleInputName1">Apply</a>
       </li>
     </ul>
   </nav>
 
   <section class="section-intro">
     <header>
-      <h1>Fooddddie</h1>
+      <h1>ZEBRADRIVINGSCHOOL</h1>
     </header>
     <div class="link-to-book-wrapper">
-      <a class="link-to-book" href="#reservations">Book a table</a>
+      <a class="link-to-book" href="#exampleInputName1">Apply for a lesson</a>
     </div>
   </section>
 
-  <section class="about-section">
+  <section class="about-section" id="about">
     <article>
       <h3>
           Section for the text why your restaurant is the best.
@@ -95,9 +95,9 @@
             <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name">
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number">
+              <input type="tel" class="form-control" id="exampleInputphoneNumber1" name="phone" placeholder="123-456-78-90" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br><br>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
       </form>
       </div>
       <div class="opening-time">
@@ -115,9 +115,9 @@
           Contact
         </h3>
         <p>
-          <span>000 9283 8456</span>
-          <span>15 Florida Ave</span>
-          <span>Palo-Alto, 1111 CA</span>
+          <span>+(123)456-78-90</span>
+          <span>Berliner Tor, Hamburg</span>
+          <span><a href="mailto:lerakuras1993@gmail.com">lerakuras1993@gmail.com</a></span>
         </p>
       </div>
     </div>
@@ -131,7 +131,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
+ <script>
+  function myFunction() {
+    alert("Hello! I am an alert box!");
+  }
+  </script>
   </body>
   
 </html> 
